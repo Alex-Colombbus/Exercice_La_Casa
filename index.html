@@ -8,6 +8,10 @@
     <meta name="author" content="Alexandre C">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        </style>
+        
     <title>La casa</title>
 </head>
 
@@ -16,13 +20,14 @@
     <header>
         <nav>
             <div>
-                <a href="#">La casa</a>
+                <a id="petitLogo" href="#">La Casa</a>
             </div>
             <div class="liensNav">
                 <a href="#">Buy</a>
                 <a href="#">Rent</a>
                 <a href="#">Sell</a>
-                <a href="#">Contact</a>
+                <a href="#">About</a>
+                <a id="contact" href="#">Contact</a>
             </div>
         </nav>
         <div class="titre">
@@ -32,7 +37,7 @@
     </header>
 
     <main>
-        <section>
+        <section class="achat">
 
             <div class="looking">
                 <h2>What Are you looking for?</h2>
@@ -97,11 +102,11 @@
 
             </div>
         </section>
-        <a href="#">View more listings</a>
+        <a id="moreList" href="#">View more listings</a>
     </main>
 
     <footer>
-        <section>
+        <section class="listes">
             <div>
                 <ul>
                     <li><a href="#">About</a></li>
@@ -129,11 +134,9 @@
                     <li><a href="#">...</a></li>
                 </ul>
             </div>
-            <div>
+            <div class="paragraph">
                 <p>La Casa is a real estate minimal HTML5 web-site template, designed and coded bu Justine Périnel for
-                    Colombbus in 2021. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum quae quasi
-                    earum
-                    excepturi aperiam! Dolorum.</p>
+                    Colombbus in 2021. Lorem ipsum dolor sit. Sad vitae auctor ipsum, tellus varius, dictum erat vel maximus varius.</p>
                 <div>
                     <a href="#"><i class="fa fa-facebook"></i></a>
                     <a href="#"><i class="fa fa-twitter"></i></a>
@@ -144,8 +147,8 @@
             </div>
         </section>
         <hr>
-        <section>
-            <p>Copyright &copy; 2021 Justine Périnel - COlombbus. All rights reserved</p>
+        <section class="copy">
+            <p>Copyright &copy; 2021 Justine Périnel - Colombbus. All rights reserved</p>
 
         </section>
     </footer>
