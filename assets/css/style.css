@@ -1,34 +1,40 @@
 * {
     box-sizing: border-box;
-    font-family: "Roboto","sans-serif";
+    font-family: "Roboto", "sans-serif";
     font-weight: 300;
-    
-    
+    margin: 0;
+    padding: 0;
+
+
 }
 
 html {
     font-size: 62.5%;
 }
 
+body {
+    width: 100%;
+}
+
+
 a {
     text-decoration: none;
 }
 
-#petitLogo{
+#petitLogo {
     font-family: Ephesis;
+    font-weight: 500;
     font-size: 3rem;
 }
 
-main{
-    width: 100%;
-}
+
 
 header {
     width: 100%;
     background: url(../img/bg.jpg) center;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100%;
+
     height: 100vh;
 
 }
@@ -49,14 +55,15 @@ header nav a {
     border-radius: 30px;
     transition: ease-in-out 0.5s;
 }
+
 header nav a:hover {
     background-color: rgba(255, 255, 255, 0.5);
 }
 
-header nav #contact{
+header nav #contact {
     border: 2px solid white;
-    
-    
+
+
 }
 
 header nav div {
@@ -112,7 +119,7 @@ main .looking img {
 }
 
 main .CarteAgencement {
-    
+
     display: flex;
     flex-wrap: wrap;
     width: 80%;
@@ -142,13 +149,15 @@ main .carte p {
     color: #A7A7A7;
     font-size: 1.1rem;
     font-weight: 400;
-    margin-bottom: 15px;
+    padding-bottom: 10px;
+    /* margin-bottom: 5px; */
 
 }
 
 main .carte h4,
 main .carte p {
-    margin-left: 15px;
+
+    margin: 10px 10px 10px 15px;
 }
 
 main .carte h5 {
@@ -156,12 +165,12 @@ main .carte h5 {
     font-size: 2rem;
     font-weight: 500;
     padding: 10px 10px;
-    left: 6px;
-    top: -20px;
+    left: 16px;
+    top: 10px;
     background-color: white;
 }
 
-main #moreList{
+main #moreList {
     display: block;
     text-align: center;
     font-size: 1.3rem;
@@ -176,69 +185,202 @@ main #moreList{
     transition: ease-in-out 0.6s;
 }
 
-main #moreList:hover{
+main #moreList:hover {
     background-color: #7BAFC9;
-    color:white
+    color: white
 }
 
-footer{
+footer {
     font-size: 1.7rem;
     font-weight: 400;
     width: 100%;
-    background-color: #7BAFC9 ;
+    background-color: #7BAFC9;
     display: flex;
     flex-direction: column;
-    
+
 }
 
-footer .listes{
+footer .listes {
     display: flex;
     justify-content: space-evenly;
     width: 75%;
+    padding-bottom: 10px;
     margin: 0 auto;
 }
 
-footer ul{
-    
+footer ul {
+
     list-style: none;
 }
 
-footer ul li{
-    
+footer ul li {
+
     padding: 10px;
 }
 
-footer .paragraph{
+footer .paragraph {
 
     color: white;
     width: 40%;
     padding: 10px;
 }
 
-footer .paragraph div{
+footer .paragraph div {
 
     padding-top: 10px;
 }
-footer .paragraph p{
+
+footer .paragraph p {
 
     line-height: 3.5rem;
 }
 
-footer .paragraph div a{
+footer .paragraph div a {
 
     padding: 0 10px;
 }
 
-footer a{
+footer a {
     color: white;
 }
 
-footer hr{
+footer hr {
     height: 1px;
     width: 70%;
+    margin: 0 auto;
 }
 
-footer .copy{
+footer .copy {
     text-align: center;
     color: white;
+    padding: 10px;
+}
+
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 19vh;
+    }
+
+    #petitLogo {
+        font-family: Ephesis;
+        /* font-size: 4rem; */
+    }
+
+    header .liensNav {
+        padding: 10px;
+    }
+
+    header nav a {
+
+        font-size: 1.5rem;
+        padding: 0 10px;
+    }
+
+    header nav #contact {
+        border: 2px solid transparent;
+    }
+
+    header nav a {
+        padding: 0px 15px;
+
+    }
+
+    header .titre {
+        transform: translateY(-110px)
+    }
+
+    /* header .titre h1,
+    header .titre h3 {
+        
+    } */
+
+    header .titre h1 {
+        font-size: 7.5rem;
+    }
+
+    header .titre h3 {
+        font-size: 1.5rem;
+        /* padding-top: 10px; */
+    }
+
+    main .CarteAgencement {
+        width: 100%;
+
+    }
+
+    div .carte:last-child {
+        display: none;
+    }
+
+    footer .listes {
+        padding: 20px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    footer .paragraph {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    footer .paragraph p {
+        text-align: center;
+    }
+
+    footer .paragraph div {
+        text-align: center;
+    }
+
+    footer hr {
+        margin: 10px auto;
+    }
+
+    footer .copy {
+        line-height: 20px;
+    }
+}
+
+@media screen and (max-width:767.98px) {
+
+    body {
+        width: 100%;
+        /* display: flex;
+        flex-direction: column; */
+
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 140px;
+    }
+
+    header nav #contact {
+        border: 2px solid transparent;
+    }
+
+
+    header .titre {
+        transform: translateY(-100px)
+    }
+
+    header h1 {
+        text-align: center;
+        line-height: 9rem;
+
+
+    }
+
+
+
 }
