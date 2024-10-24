@@ -271,10 +271,7 @@ footer .copy {
         padding-bottom: 19vh;
     }
 
-    #petitLogo {
-        font-family: Ephesis;
-        /* font-size: 4rem; */
-    }
+ 
 
     header .liensNav {
         padding: 10px;
@@ -318,6 +315,15 @@ footer .copy {
 
     }
 
+    main .carte {
+        display: flex;
+        border: 1px solid #a7a7a7bd;
+        flex-direction: column;
+        width: 40%;
+        position: relative;
+
+    }
+
     div .carte:last-child {
         display: none;
     }
@@ -354,15 +360,25 @@ footer .copy {
 
     body {
         width: 100%;
-        /* display: flex;
-        flex-direction: column; */
+        display: flex;
+        flex-direction: column;
 
     }
 
     header nav {
         display: flex;
         flex-direction: column;
-        padding-bottom: 140px;
+        padding-bottom: 230px;
+    }
+
+    #petitLogo {
+        font-family: Ephesis;
+        font-size: 4rem;
+    }
+
+    header nav a {
+        
+        padding: 15px 5px;
     }
 
     header nav #contact {
@@ -371,16 +387,104 @@ footer .copy {
 
 
     header .titre {
-        transform: translateY(-100px)
+        transform: translateY(-200px)
     }
 
-    header h1 {
+    header .titre h1 {
         text-align: center;
-        line-height: 9rem;
-
-
+        font-size: 7.8rem;
+       
+    }
+    
+    header .titre h3 {
+        font-size: 1.8rem;
+        
     }
 
+    main .looking {
+       padding: 40px 0;
+        
+    }
+    main .looking a{
+        display: none;
+        
+    }
+
+    main .looking h2{
+        font-size: 1.8rem;
+    }
+
+    main .CarteAgencement {
+
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        align-items: center;
+        justify-content: space-evenly;
+       
+    }
+    
+    main .carte {
+        display: flex;
+        border: 1px solid #a7a7a7bd;
+        flex-direction: column;
+        width: 80%;
+        position: relative;
+
+    }
+    
+    main .carte h4 {
+        font-size: 1.6rem;
+        font-weight: 800;
+        color: #5E5E5E;
+    
+    }
+    
+    main .carte p {
+        color: #A7A7A7;
+        font-size: 1.1rem;
+        font-weight: 400;
+        padding-bottom: 10px;
+        /* margin-bottom: 5px; */
+    
+    }
+    
+    main .carte h4,
+    main .carte p {
+    
+        margin: 10px 10px 10px 15px;
+    }
+
+    footer .listes{
+        flex-direction: column;
+        align-items: center;
+    
+    }
+
+    footer ul li {
+        text-align: center;
+        padding: 5px auto;
+    }
+
+    footer ul{
+        padding: 20px 0;
+    }
+
+    footer .paragraph {
+        text-align: center;
+        width: 100%;
+    }
+
+    footer .paragraph div {
+        padding: 20px 0;
+    }
+
+    footer .copy{
+        margin: 5px auto;
+        line-height: 3rem;
+        width: 90%;
+        padding-bottom: 20px;
+    }
 
 
 }
